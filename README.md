@@ -1,20 +1,35 @@
-# 🧠 Alzheimer's Disease Prediction using Machine Learning Models
+# 🧠 Alzheimer's Disease Prediction using Machine Learning & Deep Learning Models
 
-A Machine Learning-based Streamlit web app that predicts **Alzheimer’s disease risk** using MRI-derived brain measurements and cognitive test scores.  
-The model is trained using **XGBoost**, achieving reliable classification between **Demented** and **Non-Demented** subjects.
+A comprehensive **Streamlit web application** that predicts **Alzheimer’s disease risk** using both:
+
+- **Machine Learning (XGBoost)**  
+- **Deep Learning (TensorFlow/Keras)** — optional MRI image-based model  
+- **Tabular MRI biomarkers + cognitive test scores**
+
+The app also generates a downloadable **PDF clinical-style report** for each prediction.
 
 ---
 
 ## 📌 Project Overview
-This project uses **tabular clinical + MRI features** to estimate the likelihood of dementia.  
-The model takes 8 clinically relevant features:
+This project aims to estimate the likelihood of dementia based on **MRI-derived structural brain features** and **cognitive assessment scores**.  
+It uses :
+
+- **8 clinically validated biomarkers** from the **OASIS Cross-Sectional Dataset**
+- **MRI image data** from the **Alzheimer MRI 4 Classes Dataset**
+
 
 ## 🚀 Live Demo
 [🔗 Alzheimer’s Risk Prediction App](https://alzheimer-disease-risk-prediction.streamlit.app/)
 
-### **🧩 Dataset **
-Using Oasis-Cross Sectional Dataset which can be found at -
-https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers
+### 📂 Datasets Used
+
+#### **1. OASIS-1 Cross-Sectional Dataset (Tabular + MRI Biomarkers)**  
+Used for training the **XGBoost tabular model**.  
+🔗 https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers
+
+#### **2. Alzheimer MRI – 4 Class Brain MRI Dataset**  
+Used for training the **VGG16 deep learning model** (later converted to binary: Demented vs Non-Demented).  
+🔗 https://www.kaggle.com/datasets/marcopinamonti/alzheimer-mri-4-classes-dataset
 
 ---
 
@@ -26,14 +41,19 @@ https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers
 - Pandas  
 - NumPy  
 
-### **Web App**
+### **Deep Learning**
+- TensorFlow / Keras  
+- TFLite Runtime (for lightweight inference)
+
+### **Web Application**
 - Streamlit  
-- Joblib (for loading model)
+- FPDF (for PDF Report Generation)
 
 ---
 
 ## 📂 Repository Structure
 Alzheimer-ML-Prediction/
+
 
 │
 
@@ -41,11 +61,19 @@ Alzheimer-ML-Prediction/
 
 ├── oasis_cross-sectional.csv (Dataset)
 
+
+├── Alzheimer'sDiseasePrediction.ipynb
+
+├── oasis_cross-sectional.csv (Dataset)
+
 ├── XGBmodel.pkl
+
 
 ├── streamlit_app.py
 
+
 ├── requirements.txt
+
 
 └── README.md
 
@@ -59,7 +87,11 @@ Alzheimer-ML-Prediction/
 
     pip install -r requirements.txt
 
+    pip install -r requirements.txt
+
 ### **3. Run Streamlit App**
+
+    streamlit run streamlit_app.py
 
     streamlit run streamlit_app.py
 
@@ -68,3 +100,4 @@ Alzheimer-ML-Prediction/
 ## ⚠️ Important Disclaimer
 This tool is NOT a medical diagnostic system.
 It is a research/educational ML project and must not be used for clinical decisions.
+

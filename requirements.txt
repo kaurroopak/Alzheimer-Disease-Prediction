@@ -4,4 +4,6 @@ joblib
 xgboost
 numpy
 pandas
+tensorflow
+pillow
 fpdf
