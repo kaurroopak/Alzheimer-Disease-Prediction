@@ -53,7 +53,7 @@ Used for training the **VGG16 deep learning model** (later converted to binary: 
 
 ## 📂 Repository Structure
 Alzheimer-Disease-Prediction/
-│
+
 
 ├── Alzheimer'sDiseasePrediction.ipynb
 
