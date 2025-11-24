@@ -59,14 +59,14 @@ Alzheimer-ML-Prediction/
 
 ├── Alzheimer'sDiseasePrediction.ipynb
 
-├── oasis_cross-sectional.csv (Dataset)
 
+├── alzheimers_prediction_(VGG16).ipynb
 
-├── Alzheimer'sDiseasePrediction.ipynb
-
-├── oasis_cross-sectional.csv (Dataset)
 
 ├── XGBmodel.pkl
+
+
+├── vgg16_binary_fp16.tflite
 
 
 ├── streamlit_app.py
@@ -87,11 +87,7 @@ Alzheimer-ML-Prediction/
 
     pip install -r requirements.txt
 
-    pip install -r requirements.txt
-
 ### **3. Run Streamlit App**
-
-    streamlit run streamlit_app.py
 
     streamlit run streamlit_app.py
 
