@@ -1,4 +1,4 @@
-# 🧠 Alzheimer's Disease Prediction using Machine Learning (XGBoost)
+# 🧠 Alzheimer's Disease Prediction using Machine Learning Models
 
 A Machine Learning-based Streamlit web app that predicts **Alzheimer’s disease risk** using MRI-derived brain measurements and cognitive test scores.  
 The model is trained using **XGBoost**, achieving reliable classification between **Demented** and **Non-Demented** subjects.
