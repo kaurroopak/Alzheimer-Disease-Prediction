@@ -34,6 +34,10 @@ Alzheimer-ML-Prediction/
 
 │
 
+├── Alzheimer'sDiseasePrediction.ipynb
+
+├── oasis_cross-sectional.csv (Dataset)
+
 ├── XGBmodel.pkl
 
 ├── streamlit_app.py
