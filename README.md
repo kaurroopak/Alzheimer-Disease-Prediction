@@ -9,6 +9,9 @@ The model is trained using **XGBoost**, achieving reliable classification betwee
 This project uses **tabular clinical + MRI features** to estimate the likelihood of dementia.  
 The model takes 8 clinically relevant features:
 
+## 🚀 Live Demo
+[🔗 Alzheimer’s Risk Prediction App](https://alzheimer-disease-risk-prediction.streamlit.app/)
+
 ### **🧩 Dataset **
 Using Oasis-Cross Sectional Dataset which can be found at -
 https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers
