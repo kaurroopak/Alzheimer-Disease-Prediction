@@ -31,10 +31,15 @@ https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers
 
 ## 📂 Repository Structure
 Alzheimer-ML-Prediction/
+
 │
+
 ├── XGBmodel.pkl
+
 ├── streamlit_app.py
+
 ├── requirements.txt
+
 └── README.md
 
 ---
@@ -44,12 +49,12 @@ Alzheimer-ML-Prediction/
 ### **1. Clone the Repository**
 
 ### **2. Install Dependencies**
-```bash
-pip install -r requirements.txt
+
+    pip install -r requirements.txt
 
 ### **3. Run Streamlit App**
-```bash
-streamlit run streamlit_app.py
+
+    streamlit run streamlit_app.py
 
 ---
 
